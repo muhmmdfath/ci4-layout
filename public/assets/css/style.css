@@ -7,6 +7,57 @@ body {
   font-style: normal;
 }
 
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ikon tetap di tengah */
+  background-color: #38b2ac; /* Warna tosca */
+  border-radius: 10px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  transition: width 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  padding-left: 0; /* Awalnya tanpa padding */
+}
+
+.button-container:hover {
+  width: 150px; /* Memanjang saat hover */
+  padding-left: 50px; /* Tambahkan ruang untuk teks */
+}
+
+.button-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #38b2ac;
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+  flex-shrink: 0; /* Ikon tidak mengecil */
+  position: absolute; /* Pastikan ikon tetap di tempat */
+  left: 0;
+}
+
+.button-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  left: 60px; /* Geser teks ke kanan dari ikon */
+}
+
+.button-container:hover .button-text {
+  opacity: 1;
+}
+
+
 .raleway-semibold {
   font-weight: 600;
 }

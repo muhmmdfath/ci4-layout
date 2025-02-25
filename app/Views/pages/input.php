@@ -2,6 +2,13 @@
 
 <?= $this->section('content') ?>
 
+<!-- <div class="button-container"> -->
+<a href="" class="button-container shadow-lg">
+  <div class="button-icon">+</div>
+  <span class="button-text">Add Item</span>
+</a>
+<!-- </div> -->
+
 <!-- <div class="col-span-1 space-y-4 mt-8"> -->
 <table class="w-full text-sm text-left text-gray-800 border-separate border-spacing-0 mt-10 shadow-md rounded-lg">
   <thead
