@@ -6,15 +6,25 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('layout/page_layout');
+        $data = [
+            'title' => 'Dashboard'
+        ];
+        return view('layout/page_layout', $data);
     }
 
     public function dashboard(): string
     {
-        return view('pages/dashboard');
+        $data = [
+            'title' => 'Dashboard Page'
+        ];
+        return view('pages/dashboard', $data);
     }
+
     public function input(): string
     {
-        return view('pages/input');
+        $data = [
+            'title' => 'Input Page'
+        ];
+        return view('pages/input', $data);
     }
 }
