@@ -206,3 +206,18 @@ body {
     min-width: 100px;
   }
 }
+/* Ensure the form is hidden by default */
+#desktopForm.hidden {
+  display: none;
+}
+
+/* Adjust the width of the form */
+#desktopForm {
+  width: 66.666667%; /* Adjust this value as needed */
+}
+
+/* Ensure the form and table are aligned properly */
+.flex-row {
+  display: flex;
+  gap: 1.5rem; /* Adjust spacing between table and form */
+}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title><?= $title;?></title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -23,10 +23,8 @@
     <?= $this->include('layout/sidebar');?>
 
     <!-- Main Content -->
-    <div id="mainContent" class="ml-20 mt-20 w-full md:w-fit lg:w-1/2 mx-auto">
-      <div class="shadow bg-white p-4 rounded-xl shadow-lg overflow-auto">
-        <?= $this->renderSection('content') ?>
-      </div>
+    <div id="mainContent" class="ml-20 mt-20 w-full mx-auto flex flex-row">
+      <?= $this->renderSection('content') ?>
     </div>
 
 

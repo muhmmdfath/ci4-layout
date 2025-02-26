@@ -1,5 +1,5 @@
 <aside id="sidebar"
-  class="bg-teal-500 m-2 mb-2 w-16 rounded-lg fixed top-0 left-0 flex flex-col py-4 z-50 h-screen md:h-[50vh]">
+  class="bg-teal-500 m-2 mb-2 w-16 rounded-lg fixed top-0 left-0 flex flex-col py-4 z-30 h-screen md:h-[50vh]">
   <!-- Existing sidebar content -->
   <!-- Header dengan Toggle dan Logo -->
   <div class="px-3 flex items-center">
